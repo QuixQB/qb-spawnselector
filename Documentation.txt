@@ -1,0 +1,31 @@
+Thank you for choosing our services! We appreciate your support. Below is a guide to make qb-spawnselector work seamlessly with qb-apartments.
+
+Integration Guide for qb-spawnselector with qb-apartments
+
+Step 1: Modify the Configuration
+
+1. Locate the Config File: Navigate to the config.lua within the qb-apartments directory.
+2. Edit the Apartments Table: Inside the config.lua file, you'll find the Apartments.Locations table. This contains details for each apartment like name, label, and coords.
+3. Add Spawn Selector Coordinates:
+Locate the coords for where you want to integrate the spawn selector.
+Insert a new line below the enter coordinates and add the following properties to set the initial spawn selector position:
+
+x = 0,  -- Horizontal offset
+y = 0   -- Vertical offset
+
+
+The updated section should look like this:
+
+coords = {
+     enter = vector4(-667.02, -1105.24, 14.63, 242.32),
+     x = 0,
+     y = 0
+},
+
+
+4.Adjust the Position:
+The x value adjusts the spawn marker's position from left to right.
+The y value adjusts the spawn marker's position from top to bottom.
+Modify these values to position the spawn selector marker accurately on your UI.
+If your configuration matches the example, you've successfully set up the integration. Finalize by adjusting the x and y values to align the marker to the desired location on the screen.
+
